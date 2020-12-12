@@ -1,0 +1,35 @@
+Working with git and Pelican
+
+
+Initial setup:
+
+1. Set up name of repository in github  (like filipmu.github.io)
+2. Name the directory with the local respository as filipmu.github.io
+3. Make sure to rename the 'output' directory as 'docs' for github pages.
+3. Initialize the respository by:
+
+git init
+
+
+4. Do the original commit by:
+
+git add .
+git commit -m "initial commit"
+git remote add origin https://github.com/filipmu/filipmu.github.io.git
+git push -u origin main
+
+5. Do subsequent commits as:
+
+git add .
+git commit -m "subsequent commit"
+git push -u origin main
+
+
+After editing Run Pelican:
+
+make html
+make serve
+make publish
+mv output docs
+
+
